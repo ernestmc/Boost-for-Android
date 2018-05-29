@@ -403,7 +403,7 @@ then
           echo ';' >> $BOOST_DIR/tools/build/src/user-config.jam || exit 1
       done
   else
-      cp configs/user-config-boost-${BOOST_VER}.jam $BOOST_DIR/tools/build/v2/user-config.jam || exit 1
+      cp configs/user-config-boost-${BOOST_VER}.jam $BOOST_DIR/tools/build/src/user-config.jam || exit 1
   fi
 
   for dir in $PATCH_BOOST_DIR; do
